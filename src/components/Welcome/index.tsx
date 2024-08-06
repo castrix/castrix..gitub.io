@@ -49,7 +49,7 @@ export const Welcome = () => {
   return (
     <section
       id="welcome"
-      className="relative bg-red h-d-screen flex flex-nowrap md:flex-wrap items-center pointer-events-none pt-[120px] md:pt-0 overflow-hidden"
+      className="relative bg-red h-d-screen flex md:flex-nowrap flex-wrap items-center pointer-events-none pt-[120px] md:pt-0 overflow-hidden"
     >
       <div className="flex flex-col w-full md:w-1/2 gap-5 pr-9 md:pr-0 pl-9 text-sm md:text-xl h-[320px] md:h-auto">
         <TypeAnimation
