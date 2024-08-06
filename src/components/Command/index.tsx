@@ -36,7 +36,7 @@ export const Command = () => {
     }
   }
 
-  const haystack = ['top()', ...menus.map((item) => item.label), 'getCV()']
+  const haystack = [...menus.map((item) => item.label), 'getCV()']
 
   const tools = [
     {
@@ -61,11 +61,11 @@ export const Command = () => {
     },
     {
       label: 'Spaces: 2',
-      color: 'text-placeholder',
+      color: 'text-green-950',
     },
     {
       label: '+',
-      color: 'text-placeholder',
+      color: 'text-green-950',
     },
   ]
 
@@ -74,7 +74,7 @@ export const Command = () => {
   }, [])
 
   return (
-    <div id='command' className="fixed z-10 bottom-0 left-0 w-screen bg-black py-2 px-5">
+    <div id='command' className="hidden md:block fixed z-10 bottom-0 left-0 w-screen bg-green-900 py-2 px-5">
       <div className="relative flex gap-2 w-full items-center text-xl">
         <span>$</span>
         <InlineSuggest

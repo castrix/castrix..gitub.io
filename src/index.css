@@ -85,3 +85,19 @@ a:hover {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.vertical-timeline-element-content h3 {
+  text-decoration: underline;
+}
+
+.vertical-timeline-element-content h4 {
+  font-style: italic;
+}
+
+.vertical-timeline-element-content h3, .vertical-timeline-element-content h4 {
+  font-weight: bold;
+}
+
+.vertical-timeline-element-content p {
+  font-weight: normal;
+}

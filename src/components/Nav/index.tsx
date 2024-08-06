@@ -14,13 +14,13 @@ export const Nav = () => {
     <nav
       className={`fixed top-0 left-0 w-screen z-20 text-function flex justify-between px-9 text-lg border-b-4 border-default pointer-events-none transition-all ${
         scrollY > 300 ? 'lg:text-md py-2' : 'lg:text-2xl py-6'
-      }`}
+      } flex-wrap gap-2`}
     >
       <a href="/" className="hover:underline pointer-events-auto clickable">
         <TypeAnimation sequence={['myPortofolio(']} speed={30} cursor={false} />
         <TypeAnimation
           sequence={[1000, 'ihsanFajarRamadhan']}
-          speed={30}
+          speed={80}
           className="text-variable"
           cursor={false}
         />
@@ -42,7 +42,7 @@ export const Nav = () => {
               >
                 <TypeAnimation
                   sequence={[!isGetCv ? index * 600 : 0, menu?.label || '']}
-                  speed={30}
+                  speed={80}
                   cursor={false}
                 />
               </span>

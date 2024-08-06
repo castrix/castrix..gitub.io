@@ -49,9 +49,9 @@ export const Welcome = () => {
   return (
     <section
       id="welcome"
-      className="relative bg-red h-d-screen flex items-center pointer-events-none"
+      className="relative bg-red h-d-screen flex flex-wrap items-center pointer-events-none pt-[120px] md:pt-0 overflow-hidden"
     >
-      <div className="flex flex-wrap w-1/2 gap-5 pl-9 text-xl">
+      <div className="flex flex-wrap w-full md:w-1/2 gap-5 pr-9 md:pr-0 pl-9 text-sm md:text-xl h-[320px] md:h-auto">
         <TypeAnimation
           sequence={[welcomeCopyright]}
           speed={99}
@@ -107,8 +107,7 @@ export const Welcome = () => {
       </div>
       <div className="relative h-d-screen portrait">
         <span
-          className="opacity-10 text-black absolute top-0 font-extrabold nickname"
-          style={{ fontSize: '400px' }}
+          className="opacity-10 text-black absolute left-5 md:left-0 top-10 md:top-0 font-extrabold nickname text-[200px] md:text-[400px]"
           ref={nicknameRef}
         >
           SAN

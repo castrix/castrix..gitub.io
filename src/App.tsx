@@ -34,7 +34,7 @@ function App() {
       <Welcome />
       <About />
       <Command />
-      <Projects />
+      {/* <Projects /> */}
       <ToastContainer
         position="bottom-center"
         theme="dark"

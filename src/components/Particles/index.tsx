@@ -31,7 +31,7 @@ export const IFParticles = () => {
           fullScreen: {
             enable: false,
           },
-          fpsLimit: 30,
+          fpsLimit: 20,
           particles: {
             number: {
               value: 150,

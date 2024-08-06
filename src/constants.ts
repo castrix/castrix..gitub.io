@@ -43,7 +43,7 @@ export const welcomeCall = [
   },
   {
     sequence: [3400 + 500, '// { name: “Ihsan Fajar Ramadhan”, ... }'],
-    className: 'text-secondary whitespace-pre-line ml-3',
+    className: 'text-secondary whitespace-pre-line ml-3 hidden md:block',
   },
 ]
 export const welcomeHover = `// Hover my silhouette to render the picture`
@@ -54,7 +54,7 @@ export const CV_URL = "https://docs.google.com/document/d/1WKayGDe8uuSrcC3yx1zQ2
 export const aboutGreetings = [
   'Hi there!\nHere you can find about my background.',
   'Hi there!\nHere you can find about my interest.',
-  'Hi there!\nHere you can find about my career progression.',
+  'Hi there!\nHere you can find about my career.',
 ]
 
 export const aboutSections = {
@@ -65,12 +65,12 @@ export const aboutSections = {
 
 export const aboutMessages = {
   [aboutSections.background]: [
-    "Hi, nice to meet you! I'm from Indonesia, I like to travel and try to feel different kinds of atmosphere in different cities. I have Engineering degree (Bachelor of Applied Engineering from STTN-BATAN Yogyakarta). I specialized in Frontend Engineer, I've been involved in many different kinds of projects, I also have experience in mentoring.",
+    "Hi, nice to meet you! I'm from Indonesia and I enjoy traveling to experience the unique atmospheres of different cities. I hold a Bachelor's degree in Applied Engineering from STTN-BATAN Yogyakarta. As a specialized Frontend Engineer, I have been involved in various projects and also have experience in mentoring.",
   ],
   [aboutSections.interest]: [
-    "Wow! Thank you for being curious! Mostly my interest lies in tech! Either it was gadget, new frameworks, or news about frameworks updates. I also have interest in crypto and AI, I always had a wish to contribute to the technology (in my speciality), so that's currently my goal. I also love to listen to music, sometimes I play games, and sometimes I do small projects like this portofolio.",
+    "Thank you for your curiosity! My main interests lie in technology, concerts, idols. I love listening to music, playing games, and working on small projects like this portfolio.",
   ],
-}
+};
 
 export const timeline = [
   {
@@ -78,42 +78,42 @@ export const timeline = [
     position: 'Frontend Engineer (PAAS)',
     location: 'Accelbyte INC. Remote, GMT+7',
     description:
-      'I build things here, mostly using react. I responsible to execute clients customization, disscuss with teamates to find best solutions, give feedback to peers such as code reviews.',
+      'I work on building various applications, primarily using React. I am responsible for executing client customizations, collaborating with teammates to find optimal solutions, and providing feedback through code reviews.',
     icon: 'https://accelbyte.io/hubfs/ab.png',
   },
   {
     date: '2021 - 2022',
-    position: 'Frontend Engineer (SAAS), Mentoring',
-    location: 'Refactory. Indonesia',
+    position: 'Frontend Engineer Lead, Frontend Engineer, Mentor',
+    location: 'Refactory. Indonesia (Lion Parcel, Sidig.id)',
     description:
-      'New responsibility: lead a project and mentor new hires. Most of the new hires are fresh graduates with goal to be groomed as engineer. I mentored 3 students for months while I was working on my developer works as well.',
+      'In addition to my engineering duties, I led projects and mentored new hires, most of whom were fresh graduates. I guided three students for several months while continuing my development work.',
     icon: 'https://refactory.id/android-icon-192x192.png',
   },
   {
-    date: '2020 - 2021',
-    position: 'Frontend Engineer (SAAS)',
-    location: 'Refactory. Indonesia',
+    date: '2020 - 2022',
+    position: 'Frontend Engineer',
+    location: 'Refactory. Indonesia (Lion Parcel Project)',
     description:
-      "The beginning of my professional career. I work with many wonderfull people and I learned so many things here. I'm collaborating with Lion Parcel team from Lion Group.",
+      "This marked the beginning of my professional career. I worked with many wonderful people and learned a great deal. I collaborated closely with the Lion Parcel team from Lion Group.",
     icon: 'https://refactory.id/android-icon-192x192.png',
   },
   {
     date: '2013 - 2020',
-    position: 'IT enthusiast',
+    position: 'IT Enthusiast',
     location: 'Indonesia',
     description:
-      'I focused on my study, graduated from university at 2020. I had an advantage in university because I was self-taugh programmer.',
-    icon: 'https://www.blogger.com/about/favicon/android-chrome-192x192.png',
+      'I focused on my studies and graduated from university in 2020. My self-taught programming skills gave me an advantage during my university years.',
+    icon: 'https://www.raspberrypi.org/assets/application/favicon-46f434047db3301a85dcd437b5ffc394b313707f820f52a94ce96d779d729f23.svg',
   },
   {
     date: '2011 - 2013',
-    position: 'IT enthusiast',
+    position: 'IT Enthusiast',
     location: '',
     description:
-      'I was active in Blogger community, I was a curious kid and always trying to figure out how things work. My journey in self-taught programming begins here. I made my first .NET software and Blog.',
-    icon: 'https://learn.microsoft.com/favicon.ico',
+      'I was active in the Blogger community, always curious and eager to understand how things work. This is where my journey in self-taught programming began. I created my first .NET software and blog.',
+    icon: 'https://www.blogger.com/about/favicon/android-chrome-192x192.png',
   },
-]
+];
 
 export const socials = [
   {
@@ -133,7 +133,7 @@ export const socials = [
   },
 ]
 
-export type Hyperlinks = {label: string, url: string}[];
+export type Hyperlinks = { label: string, url: string }[];
 
 export const projects = [
   {
