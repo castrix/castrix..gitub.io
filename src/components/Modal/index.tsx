@@ -51,7 +51,7 @@ export const Modal = (props: Props) => {
   return (
     <div
       ref={modalRef}
-      className={`fixed top-0 left-0 z-50 w-screen max-w-[100vw] h-d-screen max-h-[100dvh] transition-all translate-y-96 scale-50 opacity-0 pointer-events-none ${
+      className={`fixed top-0 left-0 z-50 w-screen max-w-[100vw] h-d-screen max-h-[100vh] transition-all translate-y-96 scale-50 opacity-0 pointer-events-none ${
         !props.isOpen ? 'hidden' : 'flex items-center justify-center'
       }`}
     >

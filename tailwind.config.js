@@ -16,7 +16,7 @@ export default {
         string: "#FF5C00"
       },
       height: {
-        ["d-screen"]: "100dvh"
+        ["d-screen"]: "100vh"
       }
     },
   },

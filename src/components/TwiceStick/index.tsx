@@ -85,8 +85,8 @@ export const ThreeScene = () => {
   const handleClick = useRef(() => {})
   return (
     <Canvas
-      style={{ height: '50dvh' }}
-      className="w-full md:!h-[100dvh] cursor-pointer"
+      style={{ height: '50vh' }}
+      className="w-full md:!h-[100vh] cursor-pointer"
       camera={{ position: [0, 5, 10] }}
       onPointerDown={() => {
         console.log('jump')
