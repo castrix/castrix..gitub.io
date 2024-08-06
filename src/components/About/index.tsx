@@ -46,7 +46,7 @@ export const About = () => {
               repeat={Infinity}
               className="text-normal md:text-3xl whitespace-pre-line"
             />
-            <div className="flex gap-5 md:gap-10 mt-5 md:mt-10 flex-wrap">
+            <div className="flex gap-2 md:gap-10 mt-2 md:mt-10 flex-wrap">
               <IFButton
                 color="green"
                 onClick={() => setSelectedSection(aboutSections.background)}
@@ -65,13 +65,13 @@ export const About = () => {
                 {aboutSections.career}
               </IFButton>
             </div>
-            <div className="flex mt-5 md:mt-10 w-full text-base">
+            <div className="flex mt-2 md:mt-10 w-full text-base">
               {selectedSection === aboutSections.background &&
                 aboutMessages[aboutSections.background]}
               {selectedSection === aboutSections.interest &&
                 aboutMessages[aboutSections.interest]}
             </div>
-            <div className="flex gap-5 md:gap-10 mt-5 md:mt-10 md:justify-end">
+            <div className="flex gap-2 md:gap-10 mt-2 md:mt-10 md:justify-end">
               <a href="mailto:ihsan.fr@icloud.com">
                 <IFButton color="red" isActive>HIRE ME</IFButton>
               </a>
@@ -88,7 +88,7 @@ export const About = () => {
             CAREER TIMELINE (PRESENT TO PAST)
           </span>
         </div>
-        <VerticalTimeline className="mt-5">
+        <VerticalTimeline className="mt-2">
           {timeline.map((item, index) => (
             <VerticalTimelineElement
               key={index}
