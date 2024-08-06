@@ -4,7 +4,9 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls, useGLTF } from '@react-three/drei'
 import { Physics, useBox, usePlane } from '@react-three/cannon'
 
-const JumpingModel = (props: {handleClick: React.MutableRefObject<() => void>}) => {
+const JumpingModel = (props: {
+  handleClick: React.MutableRefObject<() => void>
+}) => {
   const { scene } = useGLTF('/twice-light_stick-small.glb') // https://sketchfab.com/3d-models/twice-light-stick-feded42538654a8b9bfa2a5db79fd974
   const [ref, api] = useBox(() => ({
     mass: 1,
@@ -35,7 +37,11 @@ const JumpingModel = (props: {handleClick: React.MutableRefObject<() => void>}) 
 
   return (
     <>
-      <mesh ref={ref} scale={[90, 90, 90]}>
+      <mesh
+        // @ts-ignore
+        ref={ref}
+        scale={[90, 90, 90]}
+      >
         <primitive object={scene} />
         <meshStandardMaterial
           color="orange"
@@ -46,12 +52,13 @@ const JumpingModel = (props: {handleClick: React.MutableRefObject<() => void>}) 
         />
       </mesh>
       <pointLight
+        // @ts-ignore
         ref={lightRef}
         intensity={100} // Light intensity
         distance={100}
         decay={1}
         color="red"
-        position={[0,3,3]}
+        position={[0, 3, 3]}
       />
     </>
   )
@@ -63,7 +70,11 @@ const Ground = () => {
     position: [0, -7, 0],
   }))
   return (
-    <mesh ref={ref} receiveShadow>
+    <mesh
+      // @ts-ignore
+      ref={ref}
+      receiveShadow
+    >
       <planeGeometry args={[100, 100]} />
       <meshStandardMaterial opacity={0} transparent={true} />
     </mesh>
@@ -75,10 +86,10 @@ export const ThreeScene = () => {
   return (
     <Canvas
       style={{ height: '50dvh' }}
-      className='w-full md:h-[100dvh] cursor-pointer'
+      className="w-full md:!h-[100dvh] cursor-pointer"
       camera={{ position: [0, 5, 10] }}
       onPointerDown={() => {
-        console.log("jump")
+        console.log('jump')
         handleClick.current()
       }}
     >
