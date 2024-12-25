@@ -40,6 +40,22 @@ export const Command = () => {
 
   const tools = [
     {
+      label: 'VueJS',
+      color: 'text-vue',
+    },
+    {
+      label: 'NuxtJS',
+      color: 'text-tailwind',
+    },
+    {
+      label: 'ReactJS',
+      color: 'text-react',
+    },
+    {
+      label: 'NextJS',
+      color: 'text-cyan-500',
+    },
+    {
       label: 'JS',
       color: 'text-function',
     },
@@ -52,20 +68,12 @@ export const Command = () => {
       color: 'text-tailwind',
     },
     {
-      label: 'ReactJS',
-      color: 'text-react',
-    },
-    {
-      label: 'VueJS',
-      color: 'text-vue',
-    },
-    {
       label: 'Spaces: 2',
-      color: 'text-green-950',
+      color: 'text-gray-950',
     },
     {
       label: '+',
-      color: 'text-green-950',
+      color: 'text-gray-950',
     },
   ]
 
